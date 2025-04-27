@@ -17,7 +17,7 @@ test( 'Registration Form Automation' , async ( {page} ) => {
     await page.getByText("Sports").click();
 
     await page.getByRole( "button", { name : "Picture: State and City" } )
-                        .setInputFiles("./resources/profileImage.jpeg");
+                        .setInputFiles("../resources/profileImage.jpeg");
     
     
     await page.getByRole("combobox").first().selectOption("Uttar Pradesh");

@@ -15,7 +15,7 @@ await page.locator("tbody tr").first().waitFor({ timeout: 50000 });
 const firstRow = await page.locator("tbody tr").first();
 const cells = await firstRow.locator("th").allTextContents();
 console.log(cells);
-const secondRow = await page.locator("tbody tr").nth(1);
+const secondRow = await page.locator("tbody tr").nth(3);
 const data = await secondRow.locator("td").nth(0).textContent();
 console.log(data);
 } )
